@@ -1,4 +1,3 @@
-import "rbx/index.css";
 import { Navbar, Button } from "rbx";
 
 

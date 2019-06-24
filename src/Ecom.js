@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import Nav from './Navbar'
+import Foot from './Footer'
 
 
 const Button = styled.button`
@@ -12,6 +13,7 @@ const Button = styled.button`
 `
 
 const Container = styled.div(props => ({
+  position: 'relative',
   display: 'flex',
   marginLeft: '3em',
   marginRight: '3em',
@@ -28,7 +30,9 @@ export default class Ecom extends Component {
             <Container column>
             <Button>Regular</Button>
             <Button primary>Primary</Button>
-          </Container>
+           </Container>
+           <Foot />
+         
           </div>
         )
     }
